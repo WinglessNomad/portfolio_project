@@ -1,0 +1,10 @@
+:root {
+  --font-text: "Bai Jamjuree", sans-serif;
+  --font-headings: "Exo 2", sans-serif;
+  --font-accent: "Shadows Into Light Two", cursive;
+}
+
+h1 {
+  font-family: var(--font-headings);
+  text-align: center;
+}
