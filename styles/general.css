@@ -83,15 +83,16 @@ h3 {
   transform: translateY(-10px);
 }
 
-.row {
-  margin: 0 auto;
-}
-
 .dictionary,
 .weather {
   padding: 20px;
   overflow: hidden;
-  text-align: flex-start;
+}
+.dictionary {
+  text-align: start;
+}
+.weather {
+  text-align: end;
 }
 
 p {
@@ -99,6 +100,7 @@ p {
 }
 .footer {
   text-align: center;
+  color: var(--clr-accent);
 }
 .insta,
 .linked,
