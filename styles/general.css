@@ -14,28 +14,43 @@
 }
 
 body {
-  text-align: center;
   background-color: #121212;
   color: #eeeeee;
+  font-family: var(--font-text);
 }
 
 /*HERO*/
 h1 {
   font-family: var(--font-accent);
-  margin: 0.5em;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0;
   color: var(--clr-primary);
+  text-align: center;
+}
+h2,
+h3,
+h4 {
+  font-family: var(--font-headings);
+  margin: 0;
+  line-height: 1;
+  font-size: 0.75em;
 }
 h2,
 h3 {
-  font-family: var(--font-headings);
-  margin: 0.5em 0.25em;
+  text-align: center;
 }
 
-.links a {
+.links {
+  text-align: center;
+}
+.links a,
+.col a {
   position: relative;
   display: inline-block;
   outline: none;
   font-family: var(--font-accent);
+  font-size: 0.65em;
   text-decoration: none;
   color: inherit;
   margin: 10px;
@@ -66,4 +81,27 @@ h3 {
 .link::before {
   top: 0;
   transform: translateY(-10px);
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.dictionary,
+.weather {
+  padding: 20px;
+  overflow: hidden;
+  text-align: flex-start;
+}
+
+p {
+  font-size: 0.35em;
+}
+.footer {
+  text-align: center;
+}
+.insta,
+.linked,
+.email {
+  text-align: center;
 }
