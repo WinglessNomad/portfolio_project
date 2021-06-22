@@ -13,59 +13,67 @@
   <title>Nikolina's Portfolio</title>
 </head>
 <body>
-  <header>
-
-  </header>
+  <div class="nav-container">
+    <header>
+      <a href="#" class="name">Nikolina Berglez</a>
+      <nav>
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  
   <main>
     <div class="hero">
-      <h2>Hello, I'm</h2>
-      <h1>Nina</h1>
-      <h3>A frontend developer based in Croatia</h3>
-      <div class="links">
-        <a href="#" target="blank" class="link about-link">About</a>
-        <a href="#" target="blank" class="link projects-link">Projects</a>
-        <a href="#" target="blank" class="link contact-link">Contact</a>
+      <div class="pic">
+        <img src="images/me_portfolio.svg" alt="Profile picture">
+      </div>
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Nina</span> </h1>
+        <h3>I create fabulous websites</h3>
       </div>
     </div>
-    <div class="container">
-      <div class="row mb-3">
-        <div class="col">
-          <div class="dictionary">
-            <h4>Dictionary App</h4>
-            <p>A simple Dictionary App made in React.</p>
-            <p>Stack: HTML, CSS, JS, React</p>
-            <a href="#" target="blank" class="link">Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-3">
-        <div class="col">
-          <div class="weather">
-            <h4>Weather App</h4>
-            <p>A simple weather app made in React.</p>
-            <p>Stack: HTML, CSS, SCSS, JS, React</p>
-            <a href="#" target="blank" class="link">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <p class="footer">Grab a coffee with me!</p>
-    <div class="container">
-      <div class="row ">
-        <div class="col insta">
-          <a href="#" target="blank"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="col linked">
-          <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <div class="col email">
-          <a href="mailto:nberglez@yahoo.com" target="blank"><i class="far fa-envelope"></i></a>
-        </div>
-      </div>
+    <div class="links">
+      <a href="#" target="blank" class="link about-link">About</a>
+      <a href="#" target="blank" class="link projects-link">Projects</a>
+      <a href="#" target="blank" class="link contact-link">Contact</a>
     </div>
 
+    <div class="project">
+      <h3>Featured Project</h3>
+      <div class="project-info">
+        <img src="images/dictionary1.JPG" alt="Dictionary Overview">
+        <div class="info">
+          <h4>Dictionary App</h4>
+          <p>A simple dictionary App made with React</p>
+          <br>
+          <a href="#" target="blank">Details</a>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h4 class="tech">Technology I use</h4>
+      <div class="skills">
+        <p class="html"><i class="fab fa-html5"></i></p>
+        <p class="css"><i class="fab fa-css3-alt"></i></p>
+        <p class="js"><i class="fab fa-js-square"></i></p>
+        <p class="react"><i class="fab fa-react"></i></p>
+        <p class="scss"><i class="fab fa-sass"></i></p>
+        <p class="bootstrap"><i class="fab fa-bootstrap"></i></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h4>Grab a coffee with me!</h4>
+    <div class="socials">
+      <a href="#" target="blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:nberglez@yahoo.com" target="blank"><i class="far fa-envelope"></i></a>
+    </div>
   </footer>
 </body>
 </html>
