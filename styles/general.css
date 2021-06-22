@@ -64,24 +64,11 @@ header ul a {
 
 /*HERO*/
 .hero {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
   margin: 2em 0;
 }
 
-.hero .pic {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  display: none;
-}
-
 .hero .hero-text {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  justify-items: start;
+  text-align: center;
 }
 
 .hero h1 {
@@ -234,5 +221,16 @@ footer h4 {
 .socials a {
   text-decoration: none;
   color: var(--clr-text);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 500px) {
+  body {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .links {
+    margin: auto 4em;
+  }
 }
 /*# sourceMappingURL=general.css.map */
