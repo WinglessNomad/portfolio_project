@@ -1,14 +1,12 @@
 /*BASE*/
+$font-text: "Bai Jamjuree", sans-serif;
+$font-headings: "Exo 2", sans-serif;
+$font-accent: "Shadows Into Light Two", cursive;
+$clr-primary: #a7ffeb;
+$clr-accent: #64ffda;
+$clr-opaque: #272727;
+$clr-text: #eee;
 
-:root {
-  --font-text: "Bai Jamjuree", sans-serif;
-  --font-headings: "Exo 2", sans-serif;
-  --font-accent: "Shadows Into Light Two", cursive;
-  --clr-primary: #a7ffeb;
-  --clr-accent: #64ffda;
-  --clr-opaque: #272727;
-  --clr-text: #eee;
-}
 *,
 ::before,
 ::after {
@@ -17,8 +15,8 @@
 
 body {
   background-color: #121212;
-  color: var(--clr-text);
-  font-family: var(--font-text);
+  color: $clr-text;
+  font-family: $font-text;
   height: 100vh;
 }
 
@@ -36,11 +34,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-
-  .name {
-    color: var(--clr-primary);
-    font-weight: bold;
-  }
 
   ul {
     display: flex;
@@ -62,17 +55,17 @@ header {
     text-align: center;
   }
   h1 {
-    font-family: var(--font-headings);
+    font-family: $font-headings;
   }
   span {
-    color: var(--clr-accent);
-    font-family: var(--font-accent);
+    color: $clr-accent;
+    font-family: $font-accent;
   }
 }
 
 /*LINKS RIBBON*/
 .links {
-  background-color: var(--clr-opaque);
+  background-color: $clr-opaque;
   box-shadow: 0px 0px 4px 0px rgba(221, 221, 221, 0.67),
     0px 0px 12px 7px rgba(83, 83, 83, 0.94),
     inset 0px 0px 5px 1px rgba(151, 255, 223, 0.77);
@@ -86,7 +79,8 @@ header {
     position: relative;
     display: inline-block;
     outline: none;
-    font-family: var(--font-accent);
+    font-family: $font-accent;
+    font-weight: bold;
 
     text-decoration: none;
     color: inherit;
@@ -108,7 +102,7 @@ header {
       width: 100%;
       height: 2px;
       opacity: 0;
-      background: var(--clr-primary);
+      background: $clr-primary;
       transition: opacity 0.3s, transform 0.3s;
     }
     &::after {
@@ -148,7 +142,7 @@ header {
 
       &:focus,
       &:hover {
-        color: var(--clr-primary);
+        color: $clr-primary;
       }
     }
   }
@@ -163,13 +157,16 @@ header {
   place-items: center;
   justify-content: space-evenly;
   margin: 3em 1em;
-  background-color: var(--clr-opaque);
+  background-color: $clr-opaque;
   box-shadow: 0px 0px 9px 3px rgb(65, 64, 64);
 }
 /*FOOTER*/
 
-footer h4 {
-  text-align: center;
+footer {
+  border-top: 2px solid $clr-primary;
+  h4 {
+    text-align: center;
+  }
 }
 .socials {
   display: grid;
@@ -180,12 +177,23 @@ footer h4 {
 
   a {
     text-decoration: none;
-    color: var(--clr-text);
+    color: $clr-text;
   }
 }
+
+/*ABOUT PAGE*/
+.intro {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.reason {
+  margin-bottom: 2em;
+}
+
 /*MEDIA QUERIES*/
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   body {
     font-size: 1.5em;
     line-height: 1.5em;
