@@ -25,7 +25,7 @@ body {
   margin-bottom: 2em;
 
   a {
-    color: #eeeeee;
+    color: $clr-text;
     text-decoration: none;
   }
 }
@@ -189,6 +189,44 @@ footer {
 
 .reason {
   margin-bottom: 2em;
+}
+/*PROJECTS*/
+.projects-header {
+  font-size: 0.9em;
+  justify-content: space-evenly;
+}
+.project-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
+  margin: 2em auto;
+  padding: 1em;
+}
+.carousel-item img {
+  box-shadow: 0px 0px 10px 5px #525252;
+}
+.project-title {
+  margin: 2em;
+  text-align: left;
+}
+
+.live-sites {
+  list-style: none;
+  display: flex;
+
+  .sites {
+    margin: 2em;
+
+    a {
+      text-decoration: none;
+      color: $clr-text;
+
+      &:hover,
+      &:focus {
+        color: $clr-accent;
+      }
+    }
+  }
 }
 
 /*MEDIA QUERIES*/
