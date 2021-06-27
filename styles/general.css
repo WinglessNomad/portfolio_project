@@ -299,7 +299,18 @@ footer p a:hover, footer p a:focus {
   padding: 1em;
 }
 
-.carousel-item img {
+.carousel {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+
+img {
   -webkit-box-shadow: 0px 0px 10px 5px #525252;
           box-shadow: 0px 0px 10px 5px #525252;
 }
