@@ -262,6 +262,7 @@ footer p a:hover, footer p a:focus {
   padding: 1em;
   font-family: "Shadows Into Light Two", cursive;
   font-weight: bold;
+  color: #a7ffeb;
 }
 
 .reason {
@@ -368,6 +369,9 @@ footer p a:hover, footer p a:focus {
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 500px) {
+  .projects-header {
+    font-size: 1.25em;
+  }
   .links {
     margin: auto 4em;
   }

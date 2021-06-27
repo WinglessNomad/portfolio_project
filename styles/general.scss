@@ -225,6 +225,7 @@ footer {
     padding: 1em;
     font-family: $font-accent;
     font-weight: bold;
+    color: $clr-primary;
   }
 }
 
@@ -320,6 +321,10 @@ footer {
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 500px) {
+  .projects-header {
+    font-size: 1.25em;
+  }
+
   .links {
     margin: auto 4em;
   }
