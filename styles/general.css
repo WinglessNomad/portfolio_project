@@ -172,12 +172,14 @@ header ul a {
 }
 
 /*SKILLS*/
-.tech {
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
+.skillset {
+  margin: 2em 1em 3em;
+  background-color: #272727;
+  -webkit-box-shadow: 0px 0px 9px 3px #414040;
+          box-shadow: 0px 0px 9px 3px #414040;
 }
 
-.skills {
+.skillset .skills {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -186,14 +188,16 @@ header ul a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 3em 1em;
-  background-color: #272727;
-  -webkit-box-shadow: 0px 0px 9px 3px #414040;
-          box-shadow: 0px 0px 9px 3px #414040;
 }
 
-.skills p {
+.skillset .skills p {
   padding: 1em;
+  margin: 0 auto;
+}
+
+.tech {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
   margin: 0 auto;
 }
 
@@ -205,6 +209,20 @@ footer {
 footer h4 {
   text-align: center;
   margin: 1.5em auto;
+}
+
+footer p {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #eee;
+}
+
+footer p a:hover, footer p a:focus {
+  color: #64ffda;
 }
 
 .socials {
@@ -226,14 +244,40 @@ footer h4 {
 
 /*ABOUT PAGE*/
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2em;
+  display: -ms-grid;
+  display: grid;
+  margin: 1em 1em 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.intro h3 {
+  padding: 1em;
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: bold;
 }
 
 .reason {
-  margin-bottom: 2em;
+  margin: 1em 1em 2em;
+}
+
+.names {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 0.8em;
 }
 
 /*PROJECTS*/
@@ -284,6 +328,20 @@ footer h4 {
   color: #64ffda;
 }
 
+.more {
+  margin: 1em;
+  text-align: center;
+}
+
+.more .codepen a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.more .codepen a:hover, .more .codepen a:focus {
+  color: #64ffda;
+}
+
 /*CONTACT*/
 .contact-title {
   text-align: center;
@@ -310,12 +368,34 @@ footer h4 {
 
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 500px) {
-  body {
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
   .links {
     margin: auto 4em;
+  }
+  .intro {
+    display: -ms-grid;
+    display: grid;
+    margin: 1em 1em 1.5em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    place-items: center;
+    gap: 1em;
+  }
+  .intro img {
+    margin: 0 auto;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    width: 100%;
+    height: auto;
+  }
+  .intro h3 {
+    padding: 1em;
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: bold;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
   }
 }
 /*# sourceMappingURL=general.css.map */

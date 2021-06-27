@@ -1,3 +1,0 @@
-- create mixins
-- add github logo, add codepen on projects
-- check if all links work

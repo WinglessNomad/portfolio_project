@@ -152,23 +152,29 @@ header {
   }
 }
 /*SKILLS*/
-.tech {
-  text-align: center;
-  font-family: $font-headings;
-}
-.skills {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  place-items: center;
-  justify-content: space-evenly;
-  margin: 3em 1em;
+
+.skillset {
+  margin: 2em 1em 3em;
   background-color: $clr-opaque;
   box-shadow: 0px 0px 9px 3px rgb(65, 64, 64);
 
-  p {
-    padding: 1em;
-    margin: 0 auto;
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    justify-content: space-evenly;
+
+    p {
+      padding: 1em;
+      margin: 0 auto;
+    }
   }
+}
+
+.tech {
+  text-align: center;
+  font-family: $font-headings;
+  margin: 0 auto;
 }
 /*FOOTER*/
 
@@ -177,6 +183,18 @@ footer {
   h4 {
     text-align: center;
     margin: 1.5em auto;
+  }
+  p {
+    font-size: 0.5em;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $clr-text;
+      &:hover,
+      &:focus {
+        color: $clr-accent;
+      }
+    }
   }
 }
 .socials {
@@ -194,13 +212,34 @@ footer {
 
 /*ABOUT PAGE*/
 .intro {
-  display: flex;
-  margin-bottom: 2em;
+  display: grid;
+  margin: 1em 1em 1.5em;
+  align-items: center;
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  h3 {
+    padding: 1em;
+    font-family: $font-accent;
+    font-weight: bold;
+  }
 }
 
 .reason {
-  margin-bottom: 2em;
+  margin: 1em 1em 2em;
 }
+
+.names {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  justify-content: space-evenly;
+  font-size: 0.8em;
+}
+
 /*PROJECTS*/
 .projects-header {
   font-size: 0.9em;
@@ -240,6 +279,20 @@ footer {
   }
 }
 
+.more {
+  margin: 1em;
+  text-align: center;
+
+  .codepen a {
+    text-decoration: none;
+    color: $clr-text;
+    &:hover,
+    &:focus {
+      color: $clr-accent;
+    }
+  }
+}
+
 /*CONTACT*/
 .contact-title {
   text-align: center;
@@ -267,12 +320,28 @@ footer {
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 500px) {
-  body {
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
-
   .links {
     margin: auto 4em;
+  }
+
+  .intro {
+    display: grid;
+    margin: 1em 1em 1.5em;
+    justify-content: space-evenly;
+    place-items: center;
+    gap: 1em;
+
+    img {
+      margin: 0 auto;
+      grid-column: 1 / 2;
+      width: 100%;
+      height: auto;
+    }
+    h3 {
+      padding: 1em;
+      font-family: $font-accent;
+      font-weight: bold;
+      grid-column: 2 / 3;
+    }
   }
 }
