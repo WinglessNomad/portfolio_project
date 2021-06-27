@@ -1,5 +1,3 @@
 - create mixins
-- change navbar position?
-- contact form as a popup rather than a page?
 - add github logo, add codepen on projects
 - check if all links work

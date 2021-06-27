@@ -118,6 +118,10 @@ header {
 /*FEATURED PROJECT*/
 .project {
   margin: 2em 1em;
+
+  h3 {
+    font-family: $font-headings;
+  }
 }
 .project-info {
   display: grid;
@@ -150,6 +154,7 @@ header {
 /*SKILLS*/
 .tech {
   text-align: center;
+  font-family: $font-headings;
 }
 .skills {
   display: grid;
@@ -159,6 +164,11 @@ header {
   margin: 3em 1em;
   background-color: $clr-opaque;
   box-shadow: 0px 0px 9px 3px rgb(65, 64, 64);
+
+  p {
+    padding: 1em;
+    margin: 0 auto;
+  }
 }
 /*FOOTER*/
 
@@ -166,6 +176,7 @@ footer {
   border-top: 2px solid $clr-primary;
   h4 {
     text-align: center;
+    margin: 1.5em auto;
   }
 }
 .socials {
