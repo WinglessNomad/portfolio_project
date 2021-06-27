@@ -229,6 +229,30 @@ footer {
   }
 }
 
+/*CONTACT*/
+.contact-title {
+  text-align: center;
+  font-family: $font-accent;
+  color: $clr-primary;
+  margin: 2em;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+
+  p {
+    text-align: start;
+  }
+}
+
+.contact-email {
+  text-align: center;
+  font-family: $font-headings;
+  color: $clr-accent;
+}
+
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 500px) {

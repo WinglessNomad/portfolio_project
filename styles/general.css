@@ -273,6 +273,30 @@ footer h4 {
   color: #64ffda;
 }
 
+/*CONTACT*/
+.contact-title {
+  text-align: center;
+  font-family: "Shadows Into Light Two", cursive;
+  color: #a7ffeb;
+  margin: 2em;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.contact-text p {
+  text-align: start;
+}
+
+.contact-email {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  color: #64ffda;
+}
+
 /*MEDIA QUERIES*/
 @media only screen and (min-width: 500px) {
   body {
